@@ -21,14 +21,19 @@ int main() {
       iImpar++;
     }
   }
+
+  printf("\nVetor com os números digitados:\n");
+  for (i = 0; i < 20; i++) {
+    printf("%d ", num[i]);
+  }
   printf("\nVetor dos números Pares:\n");
   for (i = 0; i < iPar; i++) {
-    printf("%d\n", numPar[i]);
+    printf("%d ", numPar[i]);
   }
 
   printf("\nVetor dos números Impares:\n");
   for (i = 0; i < iImpar; i++) {
-    printf("%d\n", numImpar[i]);
+    printf("%d ", numImpar[i]);
   }
   return 0;
 }
