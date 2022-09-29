@@ -3,22 +3,7 @@
 #include <stdlib.h>
 
 float valor[10];
-
-void MaiorMenor() {
-  float Maior = valor[0];
-  float Menor = valor[0];
-
-  for (int i = 1; i < 10; i++) {
-    if (valor[i] > Maior) {
-      Maior = valor[i];
-    } else if (valor[i] < Menor) {
-      Menor = valor[i];
-    }
-  }
-
-  printf("\n\n\tO menor valor é: %.1f\t", Menor);
-  printf("O maior valor é: %.1f", Maior);
-}
+void MaiorMenor(); 
 
 int main() {
   setlocale(LC_ALL, "Portuguese");
@@ -34,4 +19,20 @@ int main() {
   system("clear");
   MaiorMenor();
   return 0;
+}
+
+void MaiorMenor() {
+  float Maior = valor[0];
+  float Menor = valor[0];
+
+  for (int i = 1; i < 10; i++) {
+    if (valor[i] > Maior) {
+      Maior = valor[i];
+    } else if (valor[i] < Menor) {
+      Menor = valor[i];
+    }
+  }
+
+  printf("\n\n\tO menor valor é: %.1f\t", Menor);
+  printf("O maior valor é: %.1f", Maior);
 }
